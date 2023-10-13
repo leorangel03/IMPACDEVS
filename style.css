@@ -1,0 +1,78 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-size: cover; /* O tamanho da imagem será ajustado para cobrir todo o cabeçalho */
+    background-position: center; /* A imagem estará centralizada no cabeçalho */
+    background-image: url('https://img.freepik.com/vetores-gratis/papel-de-parede-abstrato-branco_23-2148830027.jpg');
+    background-repeat: no-repeat;
+    color: #000;
+    height: 100vh;
+    padding-left: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.cabecalho h1 {
+    font-size: 36px;
+    margin-bottom: 4px;
+}
+.cabecalho p {
+    margin-top: 4px;
+    font-size: 18px;
+}
+.cabecalho button{
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+.cabecalho button:hover{
+    background-color: #045d01;
+}
+
+main {
+    background-size: cover; /* O tamanho da imagem será ajustado para cobrir todo o cabeçalho */
+    background-position: center; /* A imagem estará centralizada no cabeçalho */
+    background-image: url('https://img.freepik.com/fotos-gratis/resumo-liso-vazio-cinza-studio-bem-usar-como-plano-de-fundo-relatorio-de-negocios-digital-modelo-de-site-pano-de-fundo_1258-55967.jpg');
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.navbar {
+    height: 8vh;
+    background-color: #c9c9c9;
+}
+.lista-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.navbar li {
+    margin: 5%;
+}
+.navbar a {
+    text-decoration: none;
+    color: #000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 17px;
+    transition: color 0.3s;
+}
+.navbar a:hover {
+    color: #3498db;
+}
+
+
+
+
