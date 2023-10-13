@@ -1,248 +1,529 @@
+
+
 /*RESETANDO AS CONFIGURAÇÕES DO NAVEGADOR*/
-body{
+
+body {
+
     margin: 0px;
+
     padding: 0px;
+
 }
+
+ 
+
 /*ESTILO PARA A BARRA DE NAVEGAÇÃO*/
+
 .navbar {
+
     height: 8vh;
+
     background-color: #c9c9c9;
+
     top: 0;
+
     position: fixed;
+
     z-index: 100;
+
     width: 100%;
+
 }
+
+ 
+
 .lista-nav {
+
     list-style: none;
+
     padding: 0;
+
     margin: 0;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     height: 100%;
+
 }
+
+ 
+
 .navbar li {
+
     margin: 5%;
+
 }
+
+ 
+
 .navbar a {
+
     text-decoration: none;
+
     color: #000;
+
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
     font-size: 17px;
+
     transition: color 0.3s;
+
 }
+
+ 
+
 .navbar a:hover {
+
     color: #045d01;
+
 }
+
+ 
+
 /*ESTILO PARA O CABEÇALHO*/
+
 header {
+
     background-size: cover;
+
     background-position: center;
+
     background-image: url('https://img.freepik.com/vetores-gratis/papel-de-parede-abstrato-branco_23-2148830027.jpg');
+
     background-repeat: no-repeat;
+
     color: #000;
-    height: 100vh;
+
     padding-left: 60%;
+
     display: flex;
+
     flex-direction: column;
+
     justify-content: center;
+
     align-items: baseline;
+
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
 }
+
+ 
+
 .cabecalho h1 {
+
     font-size: 36px;
+
     margin-bottom: 4px;
+
 }
+
+ 
+
 .cabecalho p {
+
     margin-top: 4px;
+
     font-size: 18px;
+
 }
-.cabecalho button{
+
+ 
+
+.cabecalho button {
+
     background-color: #000;
+
     color: #fff;
+
     padding: 10px 20px;
+
     border: none;
+
     border-radius: 5px;
+
     cursor: pointer;
+
     font-size: 16px;
+
     transition: background-color 0.3s;
+
 }
-.cabecalho button:hover{
+
+ 
+
+.cabecalho button:hover {
+
     background-color: #045d01;
+
 }
-/*ESTILO PARA A SECTION DE INFORMAÇÕES DO CLIENTE*/
+
+ 
+
+/*ESTILOS PARA A SECTION DE INFORMAÇÕES DO CLIENTE*/
+
 .about {
+
     background-size: cover;
+
     background-position: center;
+
     background-image: url('https://img.freepik.com/fotos-gratis/resumo-liso-vazio-cinza-studio-bem-usar-como-plano-de-fundo-relatorio-de-negocios-digital-modelo-de-site-pano-de-fundo_1258-55967.jpg');
+
     background-repeat: no-repeat;
+
     text-align: center;
+
     color: #000;
+
     font-family: Arial, sans-serif;
-    height: 100vh;
-    justify-content: center;
-}
-.container {
+
     display: flex;
+
     padding-top: 12vh;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
 }
-.container h1{
-    margin: 0px;
+
+ 
+
+.container {
+
+    display: flex;
+
+    width: 100%;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+ 
+
+.container h1 {
+
+    margin: 0;
+
     text-align: center;
+
 }
+
+ 
+
 .text {
-    font-family: Arial, sans-serif;
-    width: 40%;
+
+    flex: 1;
+
+    width: 100%;
+
     padding: 10px;
+
     box-sizing: border-box;
+
     color: #000;
+
     text-align: justify;
+
 }
-.text b{
+
+ 
+
+.text b {
+
     font-size: 30px;
+
 }
+
+ 
+
 .image {
-    width: 70%;
+
+    flex: 1;
+
+    width: 100%;
+
     padding: 10px;
+
     position: relative;
-    border-radius: 5px;
+
 }
+
+ 
+
 .image img {
+
     width: 100%;
-    border-radius: 5px;
+
 }
+
+ 
+
 /*ESTILOS PARA SECTION DE PROJETOS*/
+
 .projects {
+
     background-size: cover;
+
     background-position: center;
+
     background-image: url('https://img.freepik.com/fotos-gratis/resumo-liso-vazio-cinza-studio-bem-usar-como-plano-de-fundo-relatorio-de-negocios-digital-modelo-de-site-pano-de-fundo_1258-55967.jpg');
+
     background-repeat: no-repeat;
+
     text-align: center;
+
     color: #000;
+
     font-family: Arial, sans-serif;
-    height: 100vh;
-    justify-content: center;
+
     display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
     align-items: center;
+
 }
+
+ 
+
 .item {
+
     flex: 1;
+
     text-align: center;
-    border: 2px solid #000;
-    border-radius: 15px;
+
+    border: 1px solid #000;
+
+    border-radius: 5px;
+
     margin: 5vh;
+
 }
-.item h1{
+
+ 
+
+.item h1 {
+
     font-size: 20px;
+
 }
-.item p{
+
+ 
+
+.item p {
+
     font-size: 14px;
+
     text-align: center;
+
     padding-left: 7vh;
+
     width: 80%;
+
     height: 20%;
+
 }
-.item img{
+
+ 
+
+.item img {
+
     width: 80%;
+
     height: 20%;
+
 }
+
+ 
+
 /*ESTILOS PARA SECTION DOS DEVS*/
+
 .devs {
+
     background-size: cover;
+
     background-position: center;
+
     background-image: url('https://img.freepik.com/fotos-gratis/resumo-liso-vazio-cinza-studio-bem-usar-como-plano-de-fundo-relatorio-de-negocios-digital-modelo-de-site-pano-de-fundo_1258-55967.jpg');
+
     background-repeat: no-repeat;
+
     text-align: center;
+
     color: #000;
+
     font-family: Arial, sans-serif;
-    height: 100vh;
-    justify-content: center;
+
     display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
     align-items: center;
+
 }
+
+ 
+
 .rapaziada {
+
     flex: 1;
+
     text-align: center;
+
     border: 2px solid #000;
+
     border-radius: 15px;
+
     margin: 5vh;
+
 }
-.rapaziada h1{
+
+ 
+
+.rapaziada h1 {
+
     font-size: 20px;
-    font-family: 'Arial Narrow Bold', sans-serif;
+
 }
-.rapaziada img{
+
+ 
+
+.rapaziada img {
+
     width: 80%;
+
     height: 50%;
+
     padding-bottom: 4vh;
+
     border-radius: 5px;
+
 }
-/*ESTILOS PARA O FORMULARIO*/
+
+ 
+
+/*ESTILOS PARA O FORMULÁRIO*/
+
 .contact {
+
     background-size: cover;
+
     background-position: center;
+
     background-image: url('https://img.freepik.com/vetores-gratis/papel-de-parede-abstrato-branco_23-2148830027.jpg');
+
     background-repeat: no-repeat;
+
     text-align: center;
+
     color: #000;
-    font-family: 'Arial Narrow Bold', sans-serif;
-    height: 100vh;
-    justify-content: center;
+
+    font-family: Arial, sans-serif;
+
     display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
     align-items: center;
+
 }
+
+ 
+
 .form-container {
+
     border: 2px solid #000;
+
     border-radius: 15px;
+
     padding: 10px;
-    
+
+    width: 80%;
+
+    max-width: 400px;
+
 }
+
+ 
+
 .form-title {
+
     font-size: 24px;
+
     font-weight: bold;
+
     text-align: center;
-    font-family: Arial Narrow Bold';
+
 }
+
+ 
+
 .form-group {
+
     margin: 3px 0;
+
 }
+
+ 
+
 .form-label {
+
     display: block;
+
     font-weight: bold;
-    width: 50vh;
-    font-size: 14px;
-    text-align: left;
+
 }
-.form-input {
-    width: 100%;
-    padding: 8px;
-    margin-top: 4px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-.form-select {
-    width: 100%;
-    padding: 8px;
-    margin-top: 4px;
-}
+
+ 
+
+.form-input,
+
+.form-select,
+
 .form-textarea {
+
     width: 100%;
+
     padding: 8px;
+
     margin-top: 4px;
+
     border: 1px solid #ccc;
+
     border-radius: 3px;
+
 }
-.btn {
-    background-color: #000;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-    margin-top: 2vh;
-}
-.btn:hover{
+
+ 
+
+.form-button {
+
     background-color: #045d01;
+
+    color: #fff;
+
+    padding: 10px 20px;
+
+    border: none;
+
+    border-radius: 3px;
+
+    cursor: pointer;
+
 }

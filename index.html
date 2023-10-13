@@ -1,26 +1,105 @@
 <html>
     <head>
-        <title>Sites  do Leozao</title>
+        <title>IMPACDEVS</title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        
-        <header class="cabecalho">
-            <h1>SITES DO LEOZAO</h1>
+        <!--BARRA DE NAVEGAÇÃO-->
+        <nav class="navbar">
+            <ul class="lista-nav">
+                <li><a href="#header">INICIO</a></li>
+                <li><a href="#about">INFORMAÇÕES</a></li>
+                <li><a href="#projects">PROJETOS</a></li>
+                <li><a href="#devs">DESENVOLVEDORES</a></li>
+                <li><a href="#contact">CONTATO</a></li>
+            </ul>
+        </nav>
+        <!--CABEÇALHO-->
+        <header class="cabecalho" id="header">
+            <h1>IMPAC DEVS</h1>
             <p>Conheça sobre nossa START-UP:</p>
-            <button>CONFIRA</button>
+            <a href="#about"><button class="btn">CONFIRA</button></a>
         </header>
-        
-        <main>
-            <nav class="navbar">
-                <ul class="lista-nav">
-                    <li><a href="#">ABOUT US</a></li>
-                    <li><a href="#">PROJETOS</a></li>
-                    <li><a href="#">EDUCAÇÃO</a></li>
-                    <li><a href="#">CONTATO</a></li>
-                </ul>
-            </nav>
-        </main>
-
+        <!--INFORMAÇÕES DO CLIENTE-->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="text">
+                    <h1>HABILIDADES & EXPEREIÊNCIA</h1>
+                    <p>A ImpacDevs é uma empresa inovadora e apaixonada por transformar visões em realidade digital. Especializada no desenvolvimento de websites, a ImpacDevs se destaca no mundo digital como uma parceira confiável para empresas de todos os tamanhos que desejam estabelecer ou aprimorar sua presença online.</p>
+                    <p>Na ImpacDevs, nossa missão é empoderar nossos clientes, ajudando-os a alcançar seus objetivos online. Entendemos que a presença na web é essencial nos dias de hoje, e estamos comprometidos em fornecer soluções sob medida que atendam às necessidades exclusivas de cada cliente.</p>
+                    <p>Especializada em desenvolvimento de websites que oferece uma ampla variedade de serviços, incluindo a criação de websites personalizados, design atraente, otimização para motores de busca (SEO), manutenção contínua e suporte, bem como soluções de comércio eletrônico. Com um compromisso inabalável com a qualidade, uma equipe experiente e a capacidade de estabelecer parcerias de longo prazo com os clientes, a ImpacDevs é conhecida por fornecer soluções online impactantes e eficazes que atendem às necessidades únicas de cada cliente.</p>
+                </div>
+                <div class="image">
+                    <img src="https://rockcontent.com/br/wp-content/uploads/sites/2/2019/12/CODIGO_DE_PROGRAMACAO_1-1-1-1024x538.png.webp" alt="Imagem Transparente">
+                </div>    
+            </div>
+        </section>
+        <!--PROJETOS ANTERIORES-->
+        <section class="projects" id="projects">
+            <div class="item">
+                <h1>CONSULTA DE ENDEREÇOS</h1>
+                <img src="consultacep.png " alt="Imagem 1">
+                <p>Abrange consultas de endereços em um arquivo '.xlsx' para buscar os ceps respectivos através de API's.Para saber mais <a href="https://github.com/leorangel03/ConsultarCEP">CLIQUE AQUI</a></p>
+            </div>
+            <div class="item">
+                <h1>SITE PARA DISCIPLINA DE DEVOPS</h1>
+                <img src="acdevops.png" alt="Imagem 2">
+                <p>Objetivo do projeto promover a pratica colaborativa ao incluir arquivos .HTML pelo git neste repositório. Para saber mais <a href="https://github.com/leorangel03/acDevOps">CLIQUE AQUI</a></p>
+            </div>
+            <div class="item">
+                <h1>PORTIFOLIO DE DESENVOLVEDOR</h1>
+                <img src="portifolio.png" alt="Imagem 3">
+                <p>Projeto para organizar as habilidades e projetos de um desenvolvedor da IMPACDEVS em um site. Para saber mais <a href="https://github.com/leorangel03/Meu_Portifolio">CLIQUE AQUI</a></p>
+            </div>
+        </section>
+        <!--DESENVOLVEDORES-->
+        <section class="devs" id="devs">
+            <div class="rapaziada">
+                <h1>ANDRÉ LUIZ</h1>
+                <img src="andre.png" alt="Imagem 1">
+            </div>
+            <div class="rapaziada">
+                <h1>LEONARDO RANGEL</h1>
+                <img src="fotoPerfil.jpg" alt="Imagem 2">
+            </div>
+            <div class="rapaziada">
+                <h1>VINICIOS SOARES</h1>
+                <img src="vinao.png" alt="Imagem 3">
+            </div>
+        </section>
+        <!--FORMULARIO-->
+        <section class="contact" id="contact">
+            <div class="form-container">
+                <h2 class="form-title">FALE CONOSCO</h2>
+                <form action="processar.php" method="post">
+                    <div class="form-group">
+                        <label class="form-label" for="nome">Nome</label>
+                        <input class="form-input" type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="email">Email</label>
+                        <input class="form-input" type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="telefone">Telefone</label>
+                        <input class="form-input" type="tel" id="telefone" name="telefone" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="motivo">Assunto</label>
+                        <select class="form-select" id="motivo" name="motivo">
+                            <option value="suporte">QUERO UM SITE</option>
+                            <option value="vendas">DUVIDAS</option>
+                            <option value="vendas">SUPORTE</option>
+                            <option value="outro">OUTRO</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="mensagem">Mensagem</label>
+                        <textarea class="form-textarea" id="mensagem" name="mensagem" maxlength="200"></textarea>
+                    </div>
+                    <button class="btn" type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
     </body>
 </html>
